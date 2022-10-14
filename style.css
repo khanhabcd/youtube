@@ -25,8 +25,8 @@ body {
     background: white;
     display: flex;
     align-items: center;
-    padding: 0 2.5vw;
-    z-index: 9999;
+    padding: 25px;
+    z-index: 999   ;
 }
 
 .toggle-btn {
@@ -58,13 +58,6 @@ body {
     margin: -0px 30px 0;
 }
 
-.search-box {
-    /* position: relative; */
-    height: 35px;
-    display: flex;
-    width: 50%;
-    gap: 10px;
-}
 
 .search-box-1 {
     width: 530px;
@@ -104,22 +97,24 @@ body {
 
 .user-options .icon {
     height: 80%;
-    margin-right: 20px;
+    margin-right: 5px;
     cursor: pointer;
 }
 
 .user-dp {
     cursor: pointer;
-    height: 30px;
-    width: 30px;
+    height: 20px;
+    width: 20px;
     border-radius: 50%;
     overflow: hidden;
+
 }
 
 .user-dp img {
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    height: auto;
     object-fit: cover;
+
 }
 
 
@@ -154,10 +149,8 @@ body {
     margin-right: 20px;
 }
 
-.links:hover,
-.links.active {
-    background: rgba(0, 0, 0, 0.1);
-}
+
+
 
 .seperator {
     border: none;
@@ -215,7 +208,9 @@ body {
     grid-gap: 20px 5px;
     overflow-x: hidden;
 }
-
+.content-message{
+    gap: 10px;
+}
 .video {
     min-height: 250px;
     height: auto;
@@ -258,21 +253,26 @@ body {
 
 
 .content-list {
-    padding: 0 16px;
+    padding: 16px;
     display: grid;
     grid-template-columns: auto auto auto auto;
     width: calc(100% - 250px);
     margin-left: 250px;
     padding-top: 130px;
     height: 100%;
-    background-color: whitesmoke;
+    background-color:white;
     color: #000;
+    gap: 10px;
+
 }
 
 .grid-item {
     background-color: #FFFF;
-    transition: transform 2s;
+    gap:10px;
+    display: flex;
+    flex-direction: column;
 }
+
 
 .img-video img {
     width: 100%;
@@ -282,25 +282,30 @@ body {
 .img-video div {
     color: #FFFF;
 }
-
+.time-view{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    white-space: nowrap;
+}
 .content-video {
     height: 118px;
     padding: 0 5px;
     display: flex;
     background-color: #FFFF;
+    gap: 10px
+    ;
 }
 
 
 .content-video img {
-    margin: 12px 12px 0 0;
-    width: 13%;
-    height: 30%;
-    border-radius: 20px;
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
 }
-
+/* 
 .content-message .message {
-    margin: 12px 0 6px 0;
-}
+} */
 
 .content-message div:hover {
     color: #fff;
@@ -356,3 +361,4 @@ body::-webkit-scrollbar-thumb {
     background-color: #aaaaaa;
     border-radius: 10px;
 }
+
